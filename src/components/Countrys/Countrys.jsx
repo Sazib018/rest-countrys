@@ -20,7 +20,7 @@ const Countrys = () => {
         <div>
             <div>
                 {
-                    cName.map(n => <span style={{marginRight: "10px", fontSize:"20px"}}>{n},</span>)
+                    cName.map(CountryNm => <span style={{marginRight: "10px", fontWeight:'500px', fontSize:"20px"}}>{CountryNm},</span>)
                 }
             </div>
             <div className="countries-container">
