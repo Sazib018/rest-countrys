@@ -20,13 +20,13 @@ const Countrys = () => {
         <div>
             <div>
                 {
-                    cName.map(CountryNm => <span style={{marginRight: "10px", fontWeight:'500px', fontSize:"20px"}}>{CountryNm},</span>)
+                    cName.map(CountryNm => <span style={{marginRight: "10px", fontWeight:'900px', fontSize:"25px"}}>{CountryNm},</span>)
                 }
             </div>
 
             <div>
                 {
-                    cFlag.map(flag => <img style={{marginRight: "10px", height:"70px", width:'110px'}} src={flag}/>)
+                    cFlag.map(flags => <img style={{marginRight: "15px", height:"70px", width:'120px'}} src={flags}/>)
                 }
             </div>
 
