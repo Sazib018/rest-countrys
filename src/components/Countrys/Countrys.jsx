@@ -23,8 +23,18 @@ const Countrys = () => {
                     cName.map(CountryNm => <span style={{marginRight: "10px", fontWeight:'500px', fontSize:"20px"}}>{CountryNm},</span>)
                 }
             </div>
+
+            <div>
+                {
+                    cFlag.map(flag => <img style={{marginRight: "10px", height:"70px", width:'110px'}} src={flag}/>)
+                }
+            </div>
+
             <div className="countries-container">
                  { countrys?.map(country => <Country
+                    setCFlag={setCFlag}
+                    cFlag={cFlag}
+
                     setCName={setCName}
                     cName={cName}
                     key={country.cca3}
